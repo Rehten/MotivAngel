@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, TextInput } from 'react-native';
 import {borderRadiusAll, paddingAll, smallBorder} from "../../abstractions/style/physics";
+import {colors} from '../../abstractions/style/visual'
 
 export class ArgentInput extends Component {
     render() {
@@ -19,14 +20,13 @@ const inputSizes = {
 
 const styles = StyleSheet.create({
     large: Object.assign(
-        {},
-        paddingAll(inputSizes.large.padding),
-        borderRadiusAll(inputSizes.large.borderRadius),
-        smallBorder('#bbb'),
         {
             fontSize: 22,
-            backgroundColor: '#eee',
+            backgroundColor: colors.secondary,
             width: 300
-        }
+        },
+        paddingAll(inputSizes.large.padding),
+        borderRadiusAll(inputSizes.large.borderRadius),
+        smallBorder(colors.border)
     ),
 });
