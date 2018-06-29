@@ -1,3 +1,17 @@
+export const paddingSide = (value) => {
+    return {
+        paddingStart: value,
+        paddingEnd: value,
+    }
+};
+
+export const paddingVertical = (value) => {
+    return {
+        paddingBottom: value,
+        paddingTop: value,
+    }
+};
+
 export const paddingAll = (value) => {
     return {
         paddingBottom: value,
