@@ -1,5 +1,5 @@
 export const colors = {
     main: '#ffffff',
-    secondary: '#eee',
-    border: '#bbb'
+    secondary: '#bbb',
+    border: '#999'
 };

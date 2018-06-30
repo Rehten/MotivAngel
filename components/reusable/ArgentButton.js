@@ -6,7 +6,6 @@ import {colors} from '../../abstractions/style/visual'
 export class ArgentButton extends Component {
     constructor() {
         super();
-
     }
 
     render() {
