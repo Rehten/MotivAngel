@@ -1,18 +1,18 @@
-export const paddingSide = (value) => {
+export const $paddingSide = (value) => { 
     return {
         paddingStart: value,
         paddingEnd: value,
     }
 };
 
-export const paddingVertical = (value) => {
+export const $paddingVertical = (value) => {
     return {
         paddingBottom: value,
         paddingTop: value,
     }
 };
 
-export const paddingAll = (value) => {
+export const $paddingAll = (value) => {
     return {
         paddingBottom: value,
         paddingStart: value,
@@ -21,7 +21,7 @@ export const paddingAll = (value) => {
     }
 };
 
-export const borderRadiusAll = (value) => {
+export const $borderRadiusAll = (value) => {
     return {
         borderTopLeftRadius: value,
         borderBottomLeftRadius: value,
@@ -30,9 +30,8 @@ export const borderRadiusAll = (value) => {
     }
 };
 
-export const smallBorder = (value) => {
+export const $smallBorder = () => {
     return {
-        borderColor: value,
         borderWidth: 1
     }
 };

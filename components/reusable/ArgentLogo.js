@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text } from 'react-native';
-import {borderRadiusAll, paddingSide, paddingVertical, smallBorder} from "../../abstractions/style/physics";
-import {colors} from '../../abstractions/style/visual'
+import {$borderRadiusAll, $paddingSide, $paddingVertical, $smallBorder} from "../../abstractions/style/physics";
+import {$colors} from '../../abstractions/style/visual'
 
 export class ArgentLogo extends Component {
     constructor() {
@@ -28,14 +28,14 @@ const sizes = {
 const styles = StyleSheet.create({
     text: Object.assign(
         {
-            backgroundColor: colors.secondary,
+            backgroundColor: $colors.default.secondary,
             width: 150,
             marginBottom: 35,
             textAlign: 'center'
         },
-        paddingSide(sizes.logo.paddingSide),
-        paddingVertical(sizes.logo.paddingVertical),
-        borderRadiusAll(sizes.logo.borderRadius),
-        smallBorder(colors.border)
+        $paddingSide(sizes.logo.paddingSide),
+        $paddingVertical(sizes.logo.paddingVertical),
+        $borderRadiusAll(sizes.logo.borderRadius),
+        $smallBorder($colors.default.border)
     )
 });
