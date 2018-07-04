@@ -3,7 +3,7 @@ import { $colors, $borderColor } from "./visual";
 
 // вводится абстракция size - коэффициент на который умножаются физические значения(отступы и прочее) внутри функции
 // примесь - выдающая готовый внешний вид для компонента взаимодействия с пользователем(типа кнопка или поле ввода)
-export const $interactionComponentStyle = (size, componentBgColor = $colors.default.secondary, componentBorderColor = $colors.default.border) => {
+export const $interactionComponentStyle = (size, componentBgColor, componentBorderColor) => {
     return Object.assign(
         {
             backgroundColor: componentBgColor,

@@ -10,8 +10,9 @@ export class ArgentButton extends Component {
     render() {
         return (
             <TouchableHighlight
-                style={[styles.large, this.props.style]}>
-                <Text style={[styles.text]}>Продолжить через Email</Text>
+                style={[styles.large, this.props.style]}
+                onPress={this.props.onPress}>
+                <Text style={[styles.text]}>{this.props.children}</Text>
             </TouchableHighlight>
         );
     }
