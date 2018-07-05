@@ -6,18 +6,22 @@ import {ArgentButton} from "./components/reusable/ArgentButton";
 import {ArgentLogo} from "./components/reusable/ArgentLogo";
 import { RegistrationScreen } from './components/specific/RegistrationScreen';
 import { RoleSelectingScreen } from './components/specific/RoleSelectingScreen';
+import { CustomerChildTargetScreen } from './components/specific/CustomerChildTargetScreen';
 
 const RootStack =  createStackNavigator(
     {
-        Home: {
+        RegistrationEmail: {
             screen: RegistrationScreen
         },
         RoleSelect: {
             screen: RoleSelectingScreen
+        },
+        ChildTargets: {
+            screen: CustomerChildTargetScreen
         }
     }, 
     {
-        initialRouteName: 'Home',
+        initialRouteName: 'RoleSelect',
     }
 );
 

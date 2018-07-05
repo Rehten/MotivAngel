@@ -7,6 +7,7 @@ import {ArgentLogo} from "./../reusable/ArgentLogo";
 export class RegistrationScreen extends Component {
     static navigationOptions = {
         title: 'Home',
+        header: null
       };
 
     constructor() {
@@ -20,7 +21,7 @@ export class RegistrationScreen extends Component {
                 <ArgentInput placeholder={'Имя'} style={{marginTop: 10}}/>
                 <ArgentInput placeholder={'Email'} style={{marginTop: 10}}/>
                 <ArgentInput placeholder={'Пароль'} style={{marginTop: 10}}/>
-                <ArgentButton onPress={() => this.props.navigation.navigate('RoleSelect')} style={{marginTop: 10}}>
+                <ArgentButton onPress={() => this.props.navigation.navigate('ChildTargets')} style={{marginTop: 10}}>
                     Зарегистрироваться
                 </ArgentButton>
             </View>

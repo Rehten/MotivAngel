@@ -7,6 +7,7 @@ import {ArgentLogo} from "./../reusable/ArgentLogo";
 export class RoleSelectingScreen extends Component {
     static navigationOptions = {
         title: 'RoleSelect',
+        header: null
       };
 
     constructor() {
@@ -18,7 +19,7 @@ export class RoleSelectingScreen extends Component {
             <View style={styles.container}>
                 <ArgentLogo/>
                 <ArgentButton style={{marginTop: 10}}>Я Родитель</ArgentButton>
-                <ArgentButton style={{marginTop: 10}}>Я Ребенок</ArgentButton>
+                <ArgentButton onPress={() => this.props.navigation.navigate('RegistrationEmail')} style={{marginTop: 10}}>Я Ребенок</ArgentButton>
             </View>
         );
     }
